@@ -20,27 +20,34 @@
 * 默认英文字体是Helvetica
 * 默认数字字体是HelveticaNeue
 * 无微软雅黑字体
+
 ####8.android 系统
 * 默认中文字体是Droidsansfallback
 * 默认英文和数字字体是Droid Sans
 * 无微软雅黑字体
+
 ####9.winphone 系统
 * 默认中文字体是Dengxian(方正等线体)
 * 默认英文和数字字体是Segoe
 * 无微软雅黑字体
+
 #### **结论**
 * 各个手机系统有自己的默认字体，且都不支持微软雅黑
 * 如无特殊需求，手机端无需定义中文字体，使用系统默认
 * 英文字体和数字字体可使用 Helvetica ，三种系统都支持
 
         body{font-family:Helvetica;}
+
 1. 禁止用户设置字体大小
 
         -webkit-text-size-adjust:100%
+
 2. 禁止文字选中
 
         -webkit-user-select:none  //安卓不支持
+
 **3. font boosting 移动端设备为了使用户能看清楚大批量的字体,会自动对字体进行放大,但是只要指定了容器的高度,就能解决**
 
         p{max-height:9999999px}
+        
 4. 固定定位
